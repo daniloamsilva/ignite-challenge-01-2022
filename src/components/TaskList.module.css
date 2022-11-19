@@ -1,0 +1,85 @@
+.wrapper {
+  margin-top: calc(0px - 1.5rem - 2px);
+}
+
+.wrapper form {
+  width: 100%;
+  height: 3.375rem;
+  margin-bottom: 4rem;
+
+  display: flex;
+  gap: 0.5rem;
+}
+
+.wrapper form input {
+  flex: 1;
+  padding: 0 1rem;
+  border-radius: 8px;
+  background: var(--gray-500);
+  border: 1px solid var(--gray-700);
+  color: var(--white);
+}
+
+.wrapper form button[type=submit] {
+  padding: 1rem;
+  border-radius: 8px;
+  border: 0;
+  background: var(--blue-dark);
+  color: var(--white);
+  font-weight: bold;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  transition: background-color 0.1s;
+}
+
+.wrapper form button[type=submit]:not(:disabled):hover {
+  background-color: var(--blue);
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.625rem;
+}
+
+.info span {
+  margin-left: 0.5rem;
+  padding: 0.125rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: var(--gray-200);
+  background: var(--gray-400);
+  border-radius: 8px;
+}
+
+.info strong.created {
+  color: var(--blue);
+}
+
+.info strong.done {
+  color: var(--purple);
+}
+
+.emptyList {
+  border-top: 1px solid var(--gray-400);
+  border-radius: 8px;
+  padding: 4rem 1.5rem;
+  gap: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--gray-300);
+  font-size: 1rem;
+}
+
+.emptyList p {
+  text-align: center;
+  line-height: 140%;
+}
