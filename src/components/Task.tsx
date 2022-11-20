@@ -27,7 +27,7 @@ export function Task({task, onDeleteTask, onChanceTaskDoneStatus}: TaskProps) {
         <input type="checkbox" checked={task.done} onChange={handleChanceTaskDoneStatus} />
         <span className={styles.checkmark}></span>
       </label>
-      <p>{task.content}</p>
+      <p className={task.done ? styles.taskDone : '' }>{task.content}</p>
       <button title="Deletar tarefa" onClick={handleDeleteTask}>
         <Trash size={20} />
       </button>
